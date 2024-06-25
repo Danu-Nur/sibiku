@@ -54,3 +54,24 @@
 <script src="<?= base_url() ?>assets/vendors/jszip/dist/jszip.min.js"></script>
 <script src="<?= base_url() ?>assets/vendors/pdfmake/build/pdfmake.min.js"></script>
 <script src="<?= base_url() ?>assets/vendors/pdfmake/build/vfs_fonts.js"></script>
+<script>
+	function deleteConfirm(url) {
+		const deleteButton = $('#btn-delete');
+		const deleteModal = $('#deleteModal');
+
+		deleteButton.attr('href', url);
+		deleteModal.modal('show');
+	}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script>
+	$(document).ready(function() {
+		<?php if ($this->session->flashdata('success')) : ?>
+			toastr.success("<?php echo $this->session->flashdata('success'); ?>");
+		<?php endif; ?>
+
+		<?php if ($this->session->flashdata('error')) : ?>
+			toastr.error("<?php echo $this->session->flashdata('error'); ?>");
+		<?php endif; ?>
+	});
+</script>

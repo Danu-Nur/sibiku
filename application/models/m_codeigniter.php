@@ -37,6 +37,10 @@ class m_codeigniter extends CI_Model {
         return $this->db->delete($_table, [$idm => $id]);     
     }
 
+	public function count_records($table) {
+        return $this->db->count_all($table);
+    }
+
 }
 
 /* End of file m_kriteria.php */

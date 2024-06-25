@@ -52,3 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['api/organs'] = 'api/get_organs';
+$route['api/ekspresi'] = 'api/get_ekspresi';
+$route['api/kuis'] = 'api/get_kuis';
+$route['api/counts'] = 'api/get_counts';
