@@ -14,7 +14,7 @@
 							<th>No</th>
 							<th>Nama</th>
 							<th>Video</th>
-							<th>Actions</th>
+							<th>Aksi</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -26,15 +26,15 @@
 								<td>
 									<video width="300" height="200" controls>
 										<source src="<?= base_url('uploads/videos/ekspresi/' . $p->link_video) ?>" type="video/mp4">
-										Your browser does not support the video tag.
+										Browser anda tidak mendukung tag video.
 									</video>
 								</td>
 								<td>
 									<a class="btn btn-dark" href="<?= base_url('admin/Ekspresi/edit/' . $p->id) ?>">
-										<i class="bx bx-edit-alt me-1"></i> Edit
+										<i class="fa fa-edit icon"></i>
 									</a>
 									<a class="btn btn-danger" onclick="deleteConfirm('<?= site_url('admin/Ekspresi/delete/' . $p->id) ?>')" href="#!">
-										<i class="bx bx-trash me-1"></i> Delete
+										<i class="fa fa-trash icon"></i>
 									</a>
 								</td>
 							</tr>

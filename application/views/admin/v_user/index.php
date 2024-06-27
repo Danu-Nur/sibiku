@@ -17,7 +17,7 @@
 							<th>Password</th>
 							<th>Foto</th>
 							<th>Status</th>
-							<th>Actions</th>
+							<th>Aksi</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -28,14 +28,14 @@
 								<td> <?= $p->nama ?> </td>
 								<td> <?= $p->username_user ?> </td>
 								<td> <?= $p->password_user ?> </td>
-								<td> <img src="<?= empty($p->foto) ? base_url('uploads/profile/user.jpeg') : base_url('uploads/profile/'. $p->foto) ?>" width="100px" height="auto" alt=""> </td>
+								<td> <img src="<?= empty($p->foto) ? base_url('uploads/profile/user.jpeg') : base_url('uploads/profile/' . $p->foto) ?>" width="100px" height="auto" alt=""> </td>
 								<td> <span class="btn <?= ($p->status == "USER") ? 'btn-info' : 'btn-success'; ?> btn-xs me-1"><?= $p->status ?></span></td>
 								<td>
 									<a class="btn btn-dark" href="<?= base_url('admin/Users/edit/' . $p->id_user) ?>">
-										<i class="bx bx-edit-alt me-1"></i> Edit
+										<i class="fa fa-edit icon"></i>
 									</a>
 									<a class="btn btn-danger" onclick="deleteConfirm('<?= site_url('admin/Users/delete/' . $p->id_user) ?>')" href="#!">
-										<i class="bx bx-trash me-1"></i> Delete
+										<i class="fa fa-trash icon"></i>
 									</a>
 								</td>
 							</tr>

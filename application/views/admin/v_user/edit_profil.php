@@ -68,7 +68,7 @@
 					<div class="form-group">
 						<label class="control-label col-md-3 col-sm-3 col-xs-3"></label>
 						<div class="col-md-6 col-sm-9 col-xs-9">
-							<button type="submit" class="btn btn-success" style="width: 100%;">Update</button>
+							<button type="submit" class="btn btn-success" style="width: 100%;">Perbarui</button>
 						</div>
 					</div>
 

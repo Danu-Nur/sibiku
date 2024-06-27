@@ -8,11 +8,12 @@
 
 				</h2>
 				<div class="clearfix"></div>
-
+				
 			</div>
+			<!-- <hr> -->
 			<div class="profile clearfix">
 				<div style="display: flex; justify-content: center;margin-bottom: 50px;">
-					<img src="<?= base_url() ?>assets/production/images/img.jpg" width="20%" height="auto" class="profile_img">
+					<img src="<?= base_url() ?>uploads/web/dashboard.png" width="200px" height="auto" class="profile_img">
 				</div>
 			</div>
 		</div>

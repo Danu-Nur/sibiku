@@ -12,7 +12,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-usermenu pull-right">
 						<li><a href="<?= base_url('Admin/Users/profile/'.$this->session->userdata('id_user')) ?>"> Profile</a></li>
-						<li><a href="<?= base_url('Welcome/logout') ?>"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+						<li><a href="<?= base_url('Welcome/logout') ?>"><i class="fa fa-sign-out pull-right"></i> Keluar</a></li>
 					</ul>
 				</li>
 

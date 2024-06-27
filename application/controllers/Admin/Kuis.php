@@ -134,7 +134,7 @@ class Kuis extends CI_Controller
 					'salah' => $post['salah'],
 				);
 			} else {
-				if ($this->upload->display_errors() != '<p>You did not select a file to upload.</p>') {
+				if ($this->upload->display_errors() != '<p>Anda belum memilih file untuk diupload.</p>') {
 					$this->session->set_flashdata('error', $this->upload->display_errors());
 					redirect('admin/Kuis/edit/' . $id);
 				} else {

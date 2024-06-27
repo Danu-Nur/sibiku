@@ -52,7 +52,7 @@
 						<label class="control-label col-md-3 col-sm-3 col-xs-12">Status</label>
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<select class="form-control" name="status" required="required">
-								<option value="">Choose option</option>
+								<option value="">Pilih Opsi</option>
 								<option value="USER" <?= $user['status'] == "USER" ? 'selected' : '' ?> >USER</option>
 								<option value="ADMIN" <?= $user['status'] == "ADMIN" ? 'selected' : '' ?> >ADMIN</option>
 							</select>
@@ -61,7 +61,7 @@
 					<div class="ln_solid"></div>
 					<div class="form-group">
 						<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-							<button type="submit" class="btn btn-success">Submit</button>
+							<button type="submit" class="btn btn-success">Simpan</button>
 						</div>
 					</div>
 

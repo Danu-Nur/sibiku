@@ -21,7 +21,7 @@
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<video width="300" height="200" controls class=" col-md-7 col-xs-12">
 								<source src="<?= base_url('uploads/videos/organ/' . $data['link_video']) ?>" type="video/mp4">
-								Your browser does not support the video tag.
+								Browser anda tidak mendukung tag video.
 							</video>
 						</div>
 					</div>
@@ -34,7 +34,7 @@
 					<div class="ln_solid"></div>
 					<div class="form-group">
 						<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-							<button type="submit" class="btn btn-success">Submit</button>
+							<button type="submit" class="btn btn-success">Simpan</button>
 						</div>
 					</div>
 				</form>

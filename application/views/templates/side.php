@@ -1,7 +1,7 @@
 <div class="col-md-3 left_col menu_fixed">
 	<div class="left_col scroll-view">
 		<div class="navbar nav_title" style="border: 0;">
-			<a href="" class="site_title"><span>BISIKU</span></a>
+			<a href="" class="site_title"><span>SIBIKU</span></a>
 		</div>
 
 		<div class="clearfix"></div>
@@ -9,7 +9,7 @@
 		<!-- menu profile quick info -->
 		<div class="profile clearfix">
 			<div style="display: flex; justify-content: center;">
-				<img src="<?= base_url() ?>assets/production/images/img.jpg" alt="..." class="profile_img">
+				<img src="<?= base_url() ?>uploads/web/sidetop.png" width="130px" height="auto" alt="..." class="profile_img">
 			</div>
 			<!-- <div class="profile_info">
 				<span>Welcome,</span>
@@ -27,7 +27,7 @@
 				<ul class="nav side-menu">
 					<li><a href="<?= base_url('Admin/Dashboard') ?>"><i class="fa fa-home"></i> Dashboard</a></li>
 
-					<li><a><i class="fa fa-table"></i> Master Data <span class="fa fa-chevron-down"></span></a>
+					<li><a><i class="fa fa-folder"></i> Master Data <span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu">
 							<li><a href="<?= base_url('Admin/Users') ?>">Data User</a></li>
 							<li><a href="<?= base_url('Admin/Ekspresi') ?>">Data Ekspresi</a></li>

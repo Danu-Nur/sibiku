@@ -76,7 +76,7 @@
 					<div class="separator">
 
 						<div>
-							<h1>BISIKU</h1>
+							<h1>SIBIKU</h1>
 						</div>
 					</div>
 				</form>
