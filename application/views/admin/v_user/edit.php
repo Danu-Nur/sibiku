@@ -1,18 +1,23 @@
-
 <div class="row">
-	<div class="col-md-12 col-sm-12 col-xs-12">
-		<div class="x_panel">
-			<div class="x_title" style="display: flex;justify-content: space-between;align-items: center;">
-				<h2>Form <?= $judul; ?></h2>
-				<a href="<?= base_url('Admin/Users') ?>" type="button" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a>
+	<div class="x_panel">
+		<div class="x_title" style="display: flex;justify-content: space-between;align-items: center;">
+			<h2>Form <?= $judul; ?></h2>
+			<a href="<?= base_url('Admin/Users') ?>" type="button" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a>
+		</div>
+		<div class="clearfix"></div>
+		<div class="col-md-3 col-sm-12 col-xs-12">
+
+			<div class="x_content" style="display: flex; justify-content: end;">
+				<img src="<?= base_url('uploads/web/settingprofile.png') ?>" width="250px" alt="">
 			</div>
-			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-9 col-sm-12 col-xs-12">
 			<div class="x_content">
 				<br />
 				<form id="demo-form2" action="<?= site_url('Admin/Users/update') ?>" method="POST" enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left">
 
-				<input type="hidden" name="id_user" value="<?= $user['id_user']; ?>">
-				<input type="hidden" name="page" value="edit">
+					<input type="hidden" name="id_user" value="<?= $user['id_user']; ?>">
+					<input type="hidden" name="page" value="edit">
 
 					<div class="form-group">
 						<label class="control-label col-md-3 col-sm-3 col-xs-12" for="nama">Nama <span class="required">*</span>
@@ -53,12 +58,12 @@
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<select class="form-control" name="status" required="required">
 								<option value="">Pilih Opsi</option>
-								<option value="USER" <?= $user['status'] == "USER" ? 'selected' : '' ?> >USER</option>
-								<option value="ADMIN" <?= $user['status'] == "ADMIN" ? 'selected' : '' ?> >ADMIN</option>
+								<option value="USER" <?= $user['status'] == "USER" ? 'selected' : '' ?>>USER</option>
+								<option value="ADMIN" <?= $user['status'] == "ADMIN" ? 'selected' : '' ?>>ADMIN</option>
 							</select>
 						</div>
 					</div>
-					<div class="ln_solid"></div>
+					<!-- <div class="ln_solid"></div> -->
 					<div class="form-group">
 						<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
 							<button type="submit" class="btn btn-success">Simpan</button>
