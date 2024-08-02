@@ -4,7 +4,7 @@
 			<div style="display: flex; justify-content: center; align-items: center; text-align: center;">
 				<h2 style="font-size: xx-large; width: 80%;margin: 50px;">
 
-					Aplikasi Pengenalan Bahasa Isyarat SIBI Nama Organ Tubuh dan Ekspresi Wajah Bagi Siswa-siswi Penyandang Tunarungu SLB Negeri Benpasi Kefamenanu
+					Aplikasi Pengenalan Bahasa Isyarat SIBI Nama Organ Tubuh dan Ekspresi Wajah Bagi Siswa-siswi Penyandang Tunarungu SDLB Negeri Benpasi Kefamenanu
 
 				</h2>
 				<div class="clearfix"></div>
