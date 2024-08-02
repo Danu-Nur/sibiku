@@ -17,7 +17,7 @@ class Api extends CI_Controller
 	{
 		$data = $this->M_Codeigniter->getAll('tb_organ_tubuh')->result();
 		$path = 'uploads/videos/organ/';
-		$this->format_response($path,$data);
+		echo $this->format_response($path,$data);
 		// echo json_encode($dataFormat);
 	}
 
@@ -26,7 +26,7 @@ class Api extends CI_Controller
 	{
 		$data = $this->M_Codeigniter->getAll('tb_ekspresi')->result();
 		$path = 'uploads/videos/ekspresi/';
-		$this->format_response($path,$data);
+		echo $this->format_response($path,$data);
 	}
 
 	// Function to get all kuis data
@@ -34,7 +34,7 @@ class Api extends CI_Controller
 	{
 		$data = $this->M_Codeigniter->getAll('tb_kuis')->result();
 		$path = 'uploads/videos/kuis/';
-		$this->format_response($path,$data);
+		echo $this->format_response($path,$data);
 	}
 
 	// Function to get counts of all tables
@@ -49,8 +49,8 @@ class Api extends CI_Controller
 	{
 		foreach ($data as $item) {
 			// Append full path to link_video assuming it's stored in 'uploads/videos/ekspresi/'
-			$item->link_video = base_url($path . $item->link_video);
+			$item->link_video = $path . $item->link_video;
 		}
-		echo json_encode($data, JSON_UNESCAPED_SLASHES);
+		return json_encode($data, JSON_UNESCAPED_SLASHES);
 	}
 }
