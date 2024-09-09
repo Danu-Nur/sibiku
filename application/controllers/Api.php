@@ -49,7 +49,8 @@ class Api extends CI_Controller
 	{
 		foreach ($data as $item) {
 			// Append full path to link_video assuming it's stored in 'uploads/videos/ekspresi/'
-			$item->link_video = $path . $item->link_video;
+			$item->video = $path . $item->video;
+			// $item->link_video = $path . $item->link_video;
 		}
 		return json_encode($data, JSON_UNESCAPED_SLASHES);
 	}
